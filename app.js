@@ -56,8 +56,6 @@ app.use((req, res, next) => {
     .then(user => {
       req.user = user;
       res.locals.user = user;
-
-      console.log(req.user);
       next();
     });
 });
